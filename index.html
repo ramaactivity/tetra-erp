@@ -2,16 +2,19 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
     <title>Tetra ERP SuperApp</title>
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2855/2855580.png" type="image/png">
     <style>
-        body, html { 
-            margin: 0; padding: 0; width: 100%; height: 100%; 
+        /* KANDANG BESI: Mencegah layar geser dan melar di HP */
+        html, body { 
+            margin: 0; padding: 0; width: 100vw; height: 100vh; 
             overflow: hidden; background-color: #0f172a; 
+            position: fixed; top: 0; left: 0;
         }
         iframe { 
-            width: 100vw; height: 100vh; border: none; display: block; 
+            position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+            width: 100%; height: 100%; border: none; display: block; 
         }
     </style>
 </head>
